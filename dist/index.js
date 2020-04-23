@@ -1,5 +1,7 @@
 "use strict";
 
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -9,11 +11,19 @@ var _alert = _interopRequireDefault(require("./alert"));
 
 var _button = _interopRequireDefault(require("./button"));
 
+var _card = _interopRequireDefault(require("./card"));
+
 var _hx = _interopRequireDefault(require("./hx"));
 
 var _icon = _interopRequireDefault(require("./icon"));
 
 var _modal = _interopRequireDefault(require("./modal"));
+
+var _CSS = _interopRequireWildcard(require("./CSS"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { "default": obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj["default"] = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -25,11 +35,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var _default = _objectSpread({
   alert: _alert["default"],
-  modal: _modal["default"],
   button: _button["default"],
-  link: ''
+  card: _card["default"]
 }, _hx["default"], {
-  icon: _icon["default"]
+  icon: _icon["default"],
+  link: (0, _CSS.cssFunc)('text-blue-500'),
+  modal: _modal["default"],
+  CSS: _CSS["default"],
+  cssFunc: _CSS.cssFunc
 });
 
 exports["default"] = _default;

@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-function cssFunc(__base, value) {
+export function cssFunc(__base, value) {
   value = (__base + ' ' + value).trim()
   // TODO using "a, b, c, d, e, f" in place of "...args" here takes this from 1600 to 500 ms per 2M calls
   // maybe there's a faster way to do this?
