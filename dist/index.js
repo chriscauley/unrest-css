@@ -33,7 +33,15 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+var nav = (0, _CSS["default"])({
+  outer: "navbar",
+  section: "navbar-section",
+  brand: "navbar-brand"
+});
+
 var _default = _objectSpread({
+  nav: nav,
+  footer: (0, _CSS.cssFunc)('ur-footer'),
   alert: _alert["default"],
   button: _button["default"],
   card: _card["default"]
