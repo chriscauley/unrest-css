@@ -9,8 +9,13 @@ const variants = [
   'dark',
 ]
 
+const __aliases = {
+  warn: 'warning',
+  error: 'danger',
+}
+
 variants.make = (f) => {
-  const result = {}
+  const result = {__aliases}
   variants.map((variant) => (result[variant] = f(variant)))
   return result
 }
