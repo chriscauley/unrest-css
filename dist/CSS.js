@@ -71,6 +71,20 @@ var _default = function _default(_ref) {
 
     return root[alias] = root[original];
   });
+
+  root.has = function (key) {
+    return typeof root[key] === 'function';
+  };
+
+  root.get = function (key, args) {
+    if (root.has(key)) {
+      return root[key](args);
+    }
+
+    console.warn('CSS library is missing key: ' + key);
+    return root(args);
+  };
+
   return root;
 };
 

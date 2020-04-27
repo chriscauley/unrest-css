@@ -27,5 +27,13 @@ export default ({
   Object.entries(__aliases).forEach(
     ([alias, original]) => (root[alias] = root[original]),
   )
+  root.has = key => typeof root[key] === 'function'
+  root.get = (key, args) => {
+    if (root.has(key)) {
+      return root[key](args)
+    }
+    console.warn('CSS library is missing key: '+key)
+    return root(args)
+  }
   return root
 }
