@@ -19,10 +19,10 @@ const list = CSS({
 })
 
 const dropdown = CSS({
-  shelf: 'border p-4 absolute right-0 top-100 bg-white min-w-full z-10',
+  shelf: list.outer('absolute right-0 top-100 bg-white min-w-full w-56'),
   toggle: button('cursor-pointer'),
   outer: 'relative',
-  item: 'cursor-pointer',
+  item: list.action(),
 })
 
 export default {
