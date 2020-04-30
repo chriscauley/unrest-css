@@ -44,7 +44,7 @@ var list = (0, _CSS["default"])({
   action: 'list-group-item list-group-item-action'
 });
 var dropdown = (0, _CSS["default"])({
-  shelf: list.outer('absolute right-0 top-100 bg-white min-w-full w-56'),
+  shelf: list.outer('absolute right-0 top-100 bg-white min-w-full w-56 z-10'),
   toggle: (0, _button["default"])('cursor-pointer'),
   outer: 'relative',
   item: list.action()

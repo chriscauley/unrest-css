@@ -7,13 +7,14 @@ const modal = CSS({
 })
 
 modal.content = CSS({
-  __base: 'p-4 bg-white w-11/12 mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full',
+  __base: 'p-4 bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full',
   __default: 'lg',
-  xs: 'max-w-xs',
-  sm: 'max-w-sm',
-  md: 'max-w-md',
-  lg: 'max-w-lg',
-  xl: 'max-w-xl',
+  fullscreen: '',
+  xs: 'max-w-xs w-11/12',
+  sm: 'max-w-sm w-11/12',
+  md: 'max-w-md w-11/12',
+  lg: 'max-w-lg w-11/12',
+  xl: 'max-w-xl w-11/12',
 })
 
 export default modal
