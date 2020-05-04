@@ -9,6 +9,8 @@ exports["default"] = void 0;
 
 var _alert = _interopRequireDefault(require("./alert"));
 
+var _badge = _interopRequireDefault(require("./badge"));
+
 var _button = _interopRequireDefault(require("./button"));
 
 var _card = _interopRequireDefault(require("./card"));
@@ -45,7 +47,7 @@ var list = (0, _CSS["default"])({
 });
 var dropdown = (0, _CSS["default"])({
   shelf: list.outer('absolute right-0 top-100 bg-white min-w-full w-56 z-10'),
-  toggle: (0, _button["default"])('cursor-pointer'),
+  toggle: (0, _button["default"])('cursor-pointer flex'),
   outer: 'relative',
   item: list.action()
 });
@@ -57,6 +59,7 @@ var _default = _objectSpread({
   dropdown: dropdown,
   button: _button["default"],
   list: list,
+  badge: _badge["default"],
   card: _card["default"]
 }, _hx["default"], {
   icon: _icon["default"],
