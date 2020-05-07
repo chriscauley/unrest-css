@@ -20,10 +20,10 @@ const list = CSS({
 })
 
 const dropdown = CSS({
-  shelf: list.outer('absolute right-0 top-100 bg-white min-w-full w-56 z-10'),
-  toggle: button('cursor-pointer flex'),
-  outer: 'relative',
-  item: list.action(),
+  outer: 'dropdown',
+  menu: 'dropdown-menu',
+  toggle: 'dropdown-toggle',
+  item: 'dropdown-item',
 })
 
 export default {
