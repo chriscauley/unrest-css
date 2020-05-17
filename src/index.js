@@ -2,6 +2,7 @@ import alert from './alert'
 import badge from './badge'
 import button from './button'
 import card from './card'
+import grid from './grid'
 import hx from './hx'
 import icon from './icon'
 import modal from './modal'
@@ -37,8 +38,9 @@ export default {
   card,
   ...hx,
   icon,
-  link: cssFunc('text-blue-500'),
+  link: cssFunc('text-blue-500 cursor-pointer'),
   modal,
   CSS,
   cssFunc,
+  grid,
 }
