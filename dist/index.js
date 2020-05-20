@@ -65,7 +65,7 @@ var _default = _objectSpread({
   card: _card["default"]
 }, _hx["default"], {
   icon: _icon["default"],
-  link: (0, _CSS.cssFunc)('text-blue-500 cursor-pointer'),
+  link: (0, _CSS.cssFunc)('link'),
   modal: _modal["default"],
   CSS: _CSS["default"],
   cssFunc: _CSS.cssFunc,

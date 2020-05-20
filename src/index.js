@@ -38,7 +38,7 @@ export default {
   card,
   ...hx,
   icon,
-  link: cssFunc('text-blue-500 cursor-pointer'),
+  link: cssFunc('link'),
   modal,
   CSS,
   cssFunc,
