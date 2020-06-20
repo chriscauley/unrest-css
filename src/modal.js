@@ -1,13 +1,12 @@
 import CSS from './CSS'
 
 const modal = CSS({
-  outer:
-    'fixed w-full h-full top-0 left-0 flex items-center justify-center z-10 p-8',
-  mask: 'absolute w-full h-full cursor-pointer bg-gray-600 opacity-25',
+  outer: 'modal',
+  mask: 'modal-mask',
 })
 
 modal.content = CSS({
-  __base: 'p-4 bg-white mx-auto rounded shadow-lg z-50 overflow-y-auto max-h-full',
+  __base: 'modal-content',
   __default: 'lg',
   fullscreen: '',
   xs: 'max-w-xs w-11/12',
