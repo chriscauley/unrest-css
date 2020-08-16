@@ -1,7 +1,7 @@
 import CSS from './CSS'
 
 export default CSS({
-  row: 'flex flex-wrap -mx2',
+  row: 'flex flex-wrap -mx-2',
   col: 'p-2',
   col1: 'w-1/12 p-2',
   col2: 'w-2/12 p-2',
