@@ -10,7 +10,7 @@ var _CSS = _interopRequireDefault(require("./CSS"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var _default = (0, _CSS["default"])({
-  row: 'flex flex-wrap -mx2',
+  row: 'flex flex-wrap -mx-2',
   col: 'p-2',
   col1: 'w-1/12 p-2',
   col2: 'w-2/12 p-2',

@@ -6,6 +6,7 @@ import grid from './grid'
 import hx from './hx'
 import icon from './icon'
 import modal from './modal'
+import pill from './pill'
 import CSS, { cssFunc } from './CSS'
 
 const nav = CSS({
@@ -28,19 +29,20 @@ const dropdown = CSS({
 })
 
 export default {
-  nav,
-  footer: cssFunc('ur-footer'),
+  CSS,
+  cssFunc,
   alert,
-  dropdown,
-  button,
-  list,
   badge,
+  button,
   card,
+  dropdown,
+  footer: cssFunc('ur-footer'),
+  grid,
   ...hx,
   icon,
   link: cssFunc('link'),
+  list,
+  nav,
   modal,
-  CSS,
-  cssFunc,
-  grid,
+  pill,
 }

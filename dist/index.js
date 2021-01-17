@@ -23,6 +23,8 @@ var _icon = _interopRequireDefault(require("./icon"));
 
 var _modal = _interopRequireDefault(require("./modal"));
 
+var _pill = _interopRequireDefault(require("./pill"));
+
 var _CSS = _interopRequireWildcard(require("./CSS"));
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
@@ -55,21 +57,22 @@ var dropdown = (0, _CSS["default"])({
 });
 
 var _default = _objectSpread({
-  nav: nav,
-  footer: (0, _CSS.cssFunc)('ur-footer'),
+  CSS: _CSS["default"],
+  cssFunc: _CSS.cssFunc,
   alert: _alert["default"],
-  dropdown: dropdown,
-  button: _button["default"],
-  list: list,
   badge: _badge["default"],
-  card: _card["default"]
+  button: _button["default"],
+  card: _card["default"],
+  dropdown: dropdown,
+  footer: (0, _CSS.cssFunc)('ur-footer'),
+  grid: _grid["default"]
 }, _hx["default"], {
   icon: _icon["default"],
   link: (0, _CSS.cssFunc)('link'),
+  list: list,
+  nav: nav,
   modal: _modal["default"],
-  CSS: _CSS["default"],
-  cssFunc: _CSS.cssFunc,
-  grid: _grid["default"]
+  pill: _pill["default"]
 });
 
 exports["default"] = _default;
