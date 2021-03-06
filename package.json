@@ -10,10 +10,9 @@
     "build": "babel src -d dist",
     "develop": "yarn parcel docs/index.html"
   },
-  "peerDependencies": {
+  "dependencies": {
     "classnames": "^2.2.6"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
