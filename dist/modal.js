@@ -11,10 +11,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var modal = (0, _CSS["default"])({
   outer: 'modal',
-  mask: 'modal-mask'
+  mask: 'modal__mask'
 });
 modal.content = (0, _CSS["default"])({
-  __base: 'modal-content',
+  __base: 'modal__content',
   __default: 'lg',
   fullscreen: '',
   xs: 'max-w-xs w-11/12',

@@ -4,5 +4,5 @@ import CSS from './CSS'
 export default CSS({
   __base: 'pill',
   __default: 'light',
-  ...variants.make((variant) => `pill-${variant}`),
+  ...variants.make((variant) => `-${variant}`),
 })

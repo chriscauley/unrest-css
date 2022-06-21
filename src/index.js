@@ -11,8 +11,8 @@ import CSS, { cssFunc } from './CSS'
 
 const nav = CSS({
   outer: "navbar",
-  section: "navbar-section",
-  brand: "navbar-brand",
+  section: "navbar__section",
+  brand: "navbar__brand",
 })
 
 const list = CSS({
@@ -45,4 +45,7 @@ export default {
   nav,
   modal,
   pill,
+  install(app) {
+    app.config.globalProperties.$css = this
+  }
 }

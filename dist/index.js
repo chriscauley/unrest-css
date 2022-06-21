@@ -41,8 +41,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 var nav = (0, _CSS["default"])({
   outer: "navbar",
-  section: "navbar-section",
-  brand: "navbar-brand"
+  section: "navbar__section",
+  brand: "navbar__brand"
 });
 var list = (0, _CSS["default"])({
   outer: 'list-group',
@@ -72,7 +72,10 @@ var _default = _objectSpread({
   list: list,
   nav: nav,
   modal: _modal["default"],
-  pill: _pill["default"]
+  pill: _pill["default"],
+  install: function install(app) {
+    app.config.globalProperties.$css = this;
+  }
 });
 
 exports["default"] = _default;

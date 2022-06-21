@@ -21,7 +21,7 @@ var _default = (0, _CSS["default"])(_objectSpread({
   __base: 'btn',
   __default: 'primary'
 }, _variants["default"].make(function (variant) {
-  return "btn-".concat(variant);
+  return "-".concat(variant);
 })));
 
 exports["default"] = _default;

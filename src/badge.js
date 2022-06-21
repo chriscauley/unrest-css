@@ -4,5 +4,5 @@ import CSS from './CSS'
 export default CSS({
   __base: 'badge',
   __default: 'light',
-  ...variants.make((variant) => `badge-${variant}`),
+  ...variants.make((variant) => `-${variant}`),
 })

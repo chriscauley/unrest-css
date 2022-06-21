@@ -2,11 +2,11 @@ import CSS from './CSS'
 
 const modal = CSS({
   outer: 'modal',
-  mask: 'modal-mask',
+  mask: 'modal__mask',
 })
 
 modal.content = CSS({
-  __base: 'modal-content',
+  __base: 'modal__content',
   __default: 'lg',
   fullscreen: '',
   xs: 'max-w-xs w-11/12',

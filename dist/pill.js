@@ -21,7 +21,7 @@ var _default = (0, _CSS["default"])(_objectSpread({
   __base: 'pill',
   __default: 'light'
 }, _variants["default"].make(function (variant) {
-  return "pill-".concat(variant);
+  return "-".concat(variant);
 })));
 
 exports["default"] = _default;

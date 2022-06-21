@@ -21,7 +21,7 @@ var _default = (0, _CSS["default"])(_objectSpread({
   __base: 'alert',
   __default: 'primary'
 }, _variants["default"].make(function (variant) {
-  return "alert-".concat(variant);
+  return "-".concat(variant);
 })));
 
 exports["default"] = _default;
