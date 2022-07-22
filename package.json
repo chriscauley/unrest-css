@@ -1,7 +1,7 @@
 {
   "name": "@unrest/css",
   "description": "Utility for sharing class names across multiple personal projects",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "main": "dist/index.js",
   "repository": "http://github.com/chriscauley/unrest-css.git",
   "author": "chriscauley",
